@@ -1,0 +1,388 @@
+body {
+    margin: 0;
+    background-color: #eff5fe;
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #eff5fe;
+    font-family: 'Belanosima', sans-serif;
+    font-size: medium;
+}
+
+.nav a:hover {
+    color: #1f8a70;
+    transition-duration: 0.5s;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    background-color: #00425a;
+    padding: 0.3em;
+    position: sticky;
+    top: 0%;
+}
+
+.Portada {
+    display: flex;
+    align-items: end;
+    background-image: url(iimagenes/virtual.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height: 20em;
+}
+
+.Portada h1 {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 3em;
+    font-weight: 100;
+    margin: 0%;
+    color: #181823;
+    text-shadow: #1f8a70 3px 3px 3px;
+    align-items: end;
+}
+
+section h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #eff5fe;
+    margin-bottom: 0%;
+}
+
+section img {
+    object-fit: cover;
+    width: 100%;
+}
+
+section p {
+   font-family: 'Poppins', sans-serif;
+   text-align: justify;
+   margin: 0.5em;
+   font-size: small;
+   color: #eff5fe;
+}
+
+section h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #181823;
+    margin-bottom: 0%;
+}
+
+.quienes-somos {
+    background-color: #00425a;
+}
+
+.por-que-elegirnos {
+    color: #1f8a70;
+    background-color: #00425a;
+}
+
+.por-que-elegirnos h2 {
+    color: #eff5fe;
+}
+
+.por-que-elegirnos p {
+    color: #eff5fe;
+}
+
+.propuesta-educativa {
+    background-color: #1f8a70;
+}
+
+.ultimas-noticias {
+    background-color: #00425a;
+}
+
+.ultimas-noticias h2 {
+    color: #eff5fe;
+}
+
+.ultimas-noticias dt {
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    margin: 0.5em;
+    margin-top: 1em;
+    color:#eff5fe;
+}
+
+.ultimas-noticias dd {
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    margin-top: 0;
+    font-size: small;
+    color: #eff5fe;
+}
+
+.ultimas-noticias dl {
+    margin: 0.5em;
+}
+
+footer {
+    background-color: #fc7300;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    justify-items: center;
+    text-align: center;
+}
+
+footer h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0.5em;
+    font-size: small;
+    color: #181823;
+}
+
+.untrefschool {
+    color: hsl(0, 0%, 0%);
+}
+
+footer p {
+    font-size: x-small;
+    text-align: center;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+}
+
+footer img {
+    width: 20px;
+}
+
+section iframe {
+    width: 6em;
+    height: 6em;
+}
+
+form {
+    background-color: #1f8a70;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: medium;
+}
+
+form label {
+    color: #eff5fe;
+}
+
+form textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+form button {
+    background-color: #1f8a70;
+    color: #eff5fe;
+    font-weight: 900;
+}
+
+@media screen and (min-width: 768px) {
+    .quienes-somos {
+        padding: 0.5em;
+        display: grid;
+        grid-template-areas:
+          "h2 h2"
+          "img  p";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .quienes-somos > h2 {
+        grid-area: h2;
+    }
+
+    .quienes-somos p {
+        font-size: medium;
+    }
+
+    .por-que-elegirnos {
+        padding: 0.5em;
+        display: grid;
+        grid-template-areas:
+          "h2 h2"
+          "img p";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .por-que-elegirnos > h2 {
+        grid-area: h2;
+    }
+
+    .por-que-elegirnos p {
+        font-size: medium;
+    }
+    
+    .propuesta-educativa {
+        padding: 0.5em;
+        display: grid;
+        grid-template-areas:
+        "h2 h2"
+        "h3 h3"
+        "img p"
+        "h3-2 h3-2"
+        "img-2 p-2";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .propuesta-educativa > h2 {
+        grid-area: h2;
+    }
+
+    .propuesta-educativa > h3{
+        grid-area: h3;
+    }
+
+    .propuesta-educativa > img {
+        grid-area: img;
+    }
+
+    .propuesta-educativa > p {
+        grid-area: p;
+        font-size: medium;
+    }
+
+    .propuesta-educativa > .h3-2 {
+        grid-area: h3-2;
+    }
+
+    .propuesta-educativa > .img-2 {
+        grid-area: img-2;
+    }
+
+    .propuesta-educativa > .p-2 {
+        grid-area: p-2;
+        font-size: medium;
+    }
+
+    .ultimas-noticias {
+        padding: 0.5em;
+        display: grid;
+        grid-template-areas:
+          "h2 h2"
+          "img dl";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .ultimas-noticias > h2 {
+        grid-area: h2;
+    }
+
+    .ultimas-noticias > img {
+        grid-area: img;
+        height: 100%;
+    }
+
+    .ultimas-noticias > dl {
+        grid-area: dl;
+    }
+
+    footer {
+    justify-content: space-around;
+    }
+
+    footer h1 {
+        font-size: medium;
+    }
+
+    footer p {
+        font-size: small;
+    }
+
+    footer img {
+        width: 30px;
+    }
+
+    section iframe {
+        width: 15em;
+        height: 6em;
+    }
+
+    form {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        padding: 0.5em;
+        display: grid;
+        grid-template-areas:
+        "portada portada"
+        "quienes-somos por-que-elegirnos"
+        "propuesta-educativa propuesta-educativa"
+        "ultimas-noticias ultimas-noticias";
+    }
+
+    main > .Portada {
+        grid-area: portada;
+    }
+
+    main > .quienes-somos {
+        grid-area: quienes-somos;
+    }
+
+    main > .por-que-elegirnos {
+        grid-area: por-que-elegirnos;
+    }
+
+    main > .propuesta-educativa {
+        grid-area: propuesta-educativa;
+    }
+
+    main > .ultimas-noticias {
+        grid-area: ultimas-noticias;
+    }
+
+    .quienes-somos {
+        display: grid;
+        grid-template-areas: 
+        "h2 h2"
+        "img img"
+        "p p";
+    }
+
+    .quienes-somos > h2 {
+        grid-area: h2;
+    }
+
+    .quienes-somos > img {
+        grid-area: img;
+    }
+
+    .quienes-somos > p {
+        grid-area: p;
+    }
+
+    .por-que-elegirnos {
+        display: grid;
+        grid-template-areas: 
+        "h2 h2"
+        "img img"
+        "p p";
+    }
+
+    .por-que-elegirnos > h2 {
+        grid-area: h2;
+    }
+
+    .por-que-elegirnos > img {
+        grid-area: img;
+    }
+
+    .por-que-elegirnos > p {
+        grid-area: p;
+    }
+}
